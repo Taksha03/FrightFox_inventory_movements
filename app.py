@@ -15,8 +15,23 @@ st.set_page_config(
 # ─── CUSTOM CSS ────────────────────────────────────────────────────────────────
 st.markdown("""
 <style>
-    /* Main background */
-    .stApp { background-color: #F0F2F6; }
+    /* Main background + force ALL text dark */
+    .stApp {
+        background-color: #F0F2F6;
+        color: #0F172A !important;
+    }
+
+    /* Force dark text on all standard Streamlit text elements */
+    .stApp h1, .stApp h2, .stApp h3, .stApp h4,
+    .stApp p, .stApp span, .stApp label,
+    .stApp div, .stApp li, .stApp strong,
+    [data-testid="stMarkdownContainer"] h1,
+    [data-testid="stMarkdownContainer"] h2,
+    [data-testid="stMarkdownContainer"] h3,
+    [data-testid="stMarkdownContainer"] p,
+    [data-testid="stMarkdownContainer"] span {
+        color: #0F172A !important;
+    }
 
     /* KPI Cards */
     div[data-testid="metric-container"] {
@@ -49,7 +64,7 @@ st.markdown("""
         border-radius: 6px;
         margin-top: 10px;
         margin-bottom: 20px;
-        color: #1E293B;
+        color: #1E293B !important;
         font-size: 0.93rem;
         line-height: 1.6;
     }
@@ -62,7 +77,7 @@ st.markdown("""
         border-radius: 6px;
         margin-top: 10px;
         margin-bottom: 20px;
-        color: #1E293B;
+        color: #1E293B !important;
         font-size: 0.93rem;
         line-height: 1.6;
     }
@@ -74,7 +89,7 @@ st.markdown("""
         padding: 24px 28px;
         border-radius: 8px;
         margin-top: 20px;
-        color: #1E293B;
+        color: #1E293B !important;
         line-height: 1.8;
     }
 
@@ -82,7 +97,7 @@ st.markdown("""
     .section-header {
         font-size: 1.05rem;
         font-weight: 600;
-        color: #64748B;
+        color: #64748B !important;
         letter-spacing: 0.08em;
         text-transform: uppercase;
         margin-bottom: 6px;
@@ -92,6 +107,11 @@ st.markdown("""
     [data-testid="stSidebar"] {
         background-color: #FFFFFF;
         border-right: 1px solid #E2E8F0;
+    }
+
+    /* Sidebar text */
+    [data-testid="stSidebar"] * {
+        color: #0F172A !important;
     }
 </style>
 """, unsafe_allow_html=True)
