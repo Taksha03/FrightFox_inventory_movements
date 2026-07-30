@@ -1,7 +1,7 @@
 # Business Answers
 
-Candidate name:
-Date:
+Candidate name: Taksha R Naik
+Date:30/07/2026
 
 \---
 
