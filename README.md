@@ -4,7 +4,7 @@
 This repository contains my submission for the FreightFox Data Analyst assignment (Warehouse Inventory Analytics).
 The objective of this project is to analyze warehouse movement-level data to identify stock discrepancy patterns, evaluate supplier cost anomalies, and flag SKUs with negative inventory — all across 6 warehouses.
 
-**Live Dashboard:** https://frightfox-shipment-analytics-adnjhnyconb3hdelsihmqt.streamlit.app/
+**Live Dashboard:** https://frightfoxinventorymovements-ktmgrj5pjgsggtaskn9ydf.streamlit.app/
 
 ## 🚀 Key Business Findings
 - **Systemic Discrepancies:** The overall discrepancy rate sits between 8–11% across all 6 warehouses. **Pune** leads at 11.34%, but the uniform distribution confirms this is a network-wide operational issue rather than an isolated warehouse failure.
